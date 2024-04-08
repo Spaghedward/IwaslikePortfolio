@@ -29,6 +29,18 @@ function ResumePage() {
         <li>Restful API</li>
         <li>Graphql</li>
       </ul>
+      <a
+        className="button is-primary"
+        href="/GordonJackmanResume.pdf"
+        download="GordonJackmanResume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span className="icon">
+          <i className="fas fa-download"></i>
+        </span>
+        <span className='download'>Download My Resume</span>
+      </a>
     </Styles>
   );
 }
