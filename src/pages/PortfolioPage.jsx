@@ -5,6 +5,7 @@ import crate from '../images/crate.png';
 import dental from '../images/dental.jpg';
 import notetaker from '../images/notetaker.png';
 import weather from '../images/weather.png';
+import gallery from '../images/galleryofjourneys.png';
 import styled from 'styled-components';
 
 const Styles = styled.div`
@@ -26,6 +27,14 @@ export default function PortfolioPage() {
             <Container fluid className='portfolio-container'>
                 <h1 className='portfolio-title text-center'>Here is some of my work</h1>
                 <Row>
+                <Col md={6} className="project-card">
+                    <ProjectCard
+                        imgPath={gallery}
+                        title='Gallery of Journeys'
+                        description='A site for travelers to store and sell their photos from traveling.'
+                        github='https://gallery-of-journeys.onrender.com/'
+                    />
+                </Col>
                 <Col md={6} className="project-card mx-auto">
                     <ProjectCard
                         imgPath={crate}
